@@ -88,7 +88,7 @@ header ul li a{
     margin: 10px 0;
     transition: .5s;
 }
-.content button{
+.content a{
     position: relative;
     border: none;
     outline: none;
@@ -106,7 +106,7 @@ header ul li a{
     background: transparent;
     color: var(--text);
 }
-.content button.chat ion-icon{
+.content a.chat ion-icon{
     position:relative;
     top: 5px;
     color: #e91e63;
@@ -247,7 +247,7 @@ header ul li a{
     .content p{
         font-size: .8em;
     }
-    .content button{
+    .content a{
         padding: 8px 15px;
     }
     .img-container{
