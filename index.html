@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <section class="banner">
+
+        <header >
+            <a href="#" class="logo"><span>My</span>Portfolio_</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>I'm <span id="text"></span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur optio modi magni soluta r ipsam, voluptatibus perferendis enim optio hic doloremque.</p>
+            <button>Hire Me</button>
+            <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>Let's Chat</button>
+        </div>
+
+        <div class="img-container">
+            <img src="images/colors.png" class="colors" alt="img-bg-color">
+            <img src="images/jeeva.png" class="profile" alt="profile">
+        </div>
+        
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+
+        <div class="day-night" role="button"><ion-icon name="moon-outline"></ion-icon><ion-icon name="sunny-outline"></ion-icon></div>
+
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script>
+        let typingText = new Typed('#text',{
+            strings: ["Jeeva","Coder","Designer"],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed:50,
+            backDelay:1000   
+        });
+        const banner = document.querySelector('.banner');
+        const dayNight = document.querySelector('.day-night');
+
+        dayNight.onclick = function(){
+            banner.classList.toggle('night');
+        }
+    </script>
+</body>
+</html>
